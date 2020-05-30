@@ -1,0 +1,641 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a, .dropbtn {
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+  }
+  
+  li.dropdown {
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover { background-color: rgb(197, 173, 181);}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+/* Common styles for all menus */
+.menu {
+	line-height: 1;
+	margin: 0 auto 3em;
+}
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+/* Individual styles */
+
+
+
+/* Luce (by @ryjohnson) */
+.menu--luce .menu__item {
+	position: relative;
+	margin: 1em;
+}
+
+.menu--luce .menu__link {
+	position: relative;
+	display: block;
+	min-width: 120px;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.menu--luce .menu__link:hover,
+.menu--luce .menu__link:focus {
+	color: #929292;
+}
+
+.menu--luce .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--luce .menu__item::before,
+.menu--luce .menu__item::after,
+.menu--luce .menu__link::before,
+.menu--luce .menu__link::after {
+	content: '';
+	position: absolute;
+	background: #43da08;
+	-webkit-transition: -webkit-transform 0.25s, background .75s;
+	transition: transform 0.25s, background .75s;
+	-webkit-transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);
+	transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);
+}
+
+/* left and right line */
+.menu--luce .menu__item::before,
+.menu--luce .menu__item::after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+/* left line */
+.menu--luce .menu__item::before {
+	left: 0;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+/* right line */
+.menu--luce .menu__item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+/* top and bottom line */
+.menu--luce .menu__link::before,
+.menu--luce .menu__link::after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+/* top line */
+.menu--luce .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+/* bottom line */
+.menu--luce .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+
+/* Delays (first reverse, then current) */
+/* These rules can be simplified, but let's keep it for better readability */
+
+/* bottom line */
+.menu--luce .menu__item .menu__link::after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--luce .menu__item--current .menu__link::after {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+/* left line */
+.menu--luce .menu__item::before {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/* top line */
+.menu--luce .menu__item .menu__link::before {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/* right line */
+.menu--luce .menu__item--current::after {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current::before,
+.menu--luce .menu__item--current::after,
+.menu--luce .menu__item--current .menu__link::before,
+.menu--luce .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	background: #d94f5c;
+}
+ /* End: Luce Styles */
+
+
+/* End: tantalid Styles */
+
+/* YOUR STYLE (Shakespeare character name) see README.md for details */
+/* (Please copy these two lines and insert after your custom styles) */
+
+
+/* Name (by @you) */
+
+/* [Your styles here]*/
+
+/* End: Name Styles */
+
+
+/* Media queries */
+
+/* Stack items for smaller screens */
+@media screen and (max-width:55em) {
+	.menu__list {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+@font-face {
+	font-family: 'codropsicons';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/codropsicons/codropsicons.eot');
+	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	color: #444;
+	/* background: #fff; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #4e3c3e;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #f48b95;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.info {
+	font-size: 0.85em;
+	font-weight: bold;
+	line-height: 36px;
+	margin: 5em 0 0;
+	color: #750303;
+}
+
+.link-copy {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background: url(../img/link.svg) no-repeat center center;
+	background-size: cover;
+}
+
+.link-copy::after {
+	content: 'Click to copy direct link';
+	font-size: 0.85em;
+	font-weight: bold;
+	position: absolute;
+	right: 100%;
+	margin: 0 1em 0 0;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	color: #ddd;
+	-webkit-transform: translate3d(10px, 0, 0);
+	transform: translate3d(10px, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.link-copy:hover::after {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.link-copy::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin: -25px 0 0 -25px;
+	opacity: 0;
+	border-radius: 50%;
+	background: #d94f5c;
+}
+
+.link-copy--animate::before {
+	-webkit-animation: pulse 0.3s;
+	animation: pulse 0.3s;
+}
+
+@-webkit-keyframes pulse {
+	from {
+		opacity: 1;
+		-webkit-transform: scale3d(0, 0, 1);
+		transform: scale3d(0, 0, 1);
+	}
+
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+}
+
+@keyframes pulse {
+	from {
+		opacity: 1;
+		-webkit-transform: scale3d(0, 0, 1);
+		transform: scale3d(0, 0, 1);
+	}
+
+	to {
+		opacity: 0;
+		transform: scale3d(1, 1, 1);
+		webkit-transform: scale3d(1, 1, 1);
+	}
+
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+
+}
+
+@media (max-width:500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+
+}
+
+/* Content */
+.content {
+	padding: 3em 0;
+}
+
+.section {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.section:nth-of-type(odd):not(:first-child) {
+	color: #fff;
+	background: #2a282b;
+}
+
+.section--menu {
+	position: relative;
+	overflow: hidden;
+	min-height: 0vh;
+	padding: 0em 0 0em;
+}
+
+.break {
+	padding: 3em 0;
+	text-align: center;
+	background: #d94f5c;
+}
+
+.section__title {
+	font-size: 0.65em;
+	font-weight: 700;
+	-webkit-flex: none;
+	flex: none;
+	margin: 3em 0 15em;
+	text-indent: 3px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #d1d1d1;
+}
+
+.break__title {
+	font-size: 1.85em;
+	font-weight: normal;
+	margin: 0;
+	color: #fff;
+}
+
+.section--intro {
+	font-size: 2em;
+	position: relative;
+	min-height: 100vh;
+	text-align: center;
+	color: #fff;
+}
+
+.section--intro p {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+/* Header */
+.codrops-header {
+	position: relative;
+	height: 100vh;
+	min-height: 600px;
+	padding: 0em 1em 4em;
+	text-align: center;
+	color: #fff;
+	background: #d94f5c url(../img/mouse.svg) no-repeat left 50% bottom 40px;
+}
+
+.codrops-header h1 {
+	font-size: 3.25em;
+	font-weight: 700;
+	line-height: 1;
+	position: relative;
+	z-index: 10;
+	margin: 0.5em 0 0;
+	letter-spacing: -1px;
+}
+
+.codrops-header h1 span {
+	font-size: 50%;
+	font-weight: normal;
+	display: block;
+	margin: 0.5em 0;
+	letter-spacing: 0;
+	color: #f48b95;
+}
+
+/* Top Navigation Style */
+.codrops-links {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.codrops-links::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	background: #c14954;
+	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
+	transform: rotate3d(0, 0, 1, 22.5deg);
+}
+
+.codrops-icon {
+	display: inline-block;
+	width: 1.5em;
+	margin: 0.5em;
+	padding: 0em 0;
+	text-decoration: none;
+}
+
+.codrops-icon span {
+	display: none;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	margin: 0 5px;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+}
+
+.codrops-icon--drop:before {
+	content: '\e001';
+}
+
+.codrops-icon--prev:before {
+	content: '\e004';
+}
+
+/* Demo links */
+.codrops-demos {
+	margin: 2em 0 0;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.codrops-demos a.current-demo {
+	color: #333;
+}
+
+/* Related demos */
+.content--related {
+	font-weight: bold;
+	padding: 10em 1em;
+	text-align: center;
+	background: #d94f5c;
+}
+
+.content__wrap--related {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.6;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	font-size: 1em;
+	margin: 0;
+	padding: 0.5em;
+}
+
+@media screen and (max-width:50em) {
+	.section--intro {
+		font-size: 1em;
+	}
+
+}

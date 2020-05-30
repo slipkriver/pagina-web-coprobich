@@ -10,7 +10,7 @@
     <title>COPROBICH</title>
     
     <!-- Icon -->
-    <link rel="icon" href="img/icon/logo_coprobich.ico">
+    <link rel="icon" href="assets/img/icon/logo_coprobich.ico">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/component.css" type="text/css">
 </head>
 
 <body>
@@ -76,22 +77,7 @@
         <div class="nav-item">
             
             <div class="container">
-                <!-- <div class="nav-depart">
-                    <div class="depart-btn">
-                        <i class="ti-menu"></i>
-                        <span>Menú</span>
-                        <ul class="depart-hover">
-                            <li class="active"><a href="#">Women’s Clothing</a></li>
-                            <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
-                        </ul>
-                    </div>
-                </div> -->
+               
                 <!-- <nav class="nav-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="./index.html">Inicio</a></li>
@@ -114,7 +100,24 @@
                         <li><a href="./contact.html">Contacto</a></li>
                     </ul>
                 </nav> -->
-                
+                <section class="section section--menu " id="Luce">
+                    <nav class="menu menu--luce" id="Luce">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--current"><a class="menu__link">Home</a></li>
+                            <li class="menu__item"><a class="menu__link">Portfolio</a></li>
+                            <li class="menu__item"><a class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a class="menu__link">Shop</a></li>
+                            <li class="menu__item"><a class="menu__link">Contact</a></li>
+                            <li class="menu__item dropdown"><a class="menu__link dropbtn">Dropdown1</a>
+                                <div class="dropdown-content">
+                                  <a  href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                              </li>
+                        </ul>
+                    </nav>
+                </section>
                 <div id="mobile-menu-wrap"></div>
             </div>
         </div>
@@ -582,6 +585,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>COPROB
     <script src="assets/js/jquery.slicknav.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/classie.js"></script>
 </body>
 
 </html>
