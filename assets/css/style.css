@@ -37,6 +37,7 @@ body {
   font-family: "Muli", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  background-color: #303030;
 }
 
 h1,
@@ -929,7 +930,7 @@ ol {
 
 .hero-items .single-hero-items {
   height: 825px;
-  padding-top: 20px;
+  padding-top: 150px;
 }
 
 .hero-items .single-hero-items span {
@@ -979,7 +980,7 @@ ol {
   line-height: 140px;
   position: relative;
   top: -200px;
-  left: 900px;
+  left: 700px;
   /* background: #f7b100; */
   z-index: 1;
   -webkit-transform: rotate(45deg);
