@@ -41,7 +41,7 @@
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fbfbfb;
+  background: #212529;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -53,7 +53,7 @@
 
 #topbar .contact-info a {
   line-height: 1;
-  color: #444444;
+  color: #ffffff;
   transition: 0.3s;
 }
 

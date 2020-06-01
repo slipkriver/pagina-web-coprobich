@@ -37,7 +37,7 @@ body {
   font-family: "Muli", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background-color: #303030;
+  background-color: #212529;
 }
 
 h1,
@@ -95,7 +95,10 @@ button:focus,
 textarea:focus {
   outline: none;
 }
+a{
 
+  text-decoration: none;
+}
 a:hover,
 a:focus {
   text-decoration: none;
