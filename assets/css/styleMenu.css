@@ -27,7 +27,7 @@
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #5cb874;
+  background: #0a0a0a;
   color: #fff;
   transition: all 0.4s;
 }
@@ -58,11 +58,11 @@
 }
 
 #topbar .contact-info a:hover {
-  color: #5cb874;
+  color: rgb(246, 187, 0);
 }
 
 #topbar .contact-info i {
-  color: #5cb874;
+  color: rgb(151, 183, 0);
   padding-right: 4px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #topbar .social-links a:hover {
-  color: #5cb874;
+  color: rgb(151, 183, 0);
 }
 
 #topbar .social-links a:first-child {
@@ -90,7 +90,7 @@
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgb(246 , 187, 0);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -113,7 +113,7 @@
 }
 
 #header .logo a {
-  color: #5cb874;
+  color: rgb(32, 66, 0);
 }
 
 #header .logo img {
@@ -153,14 +153,15 @@
 .nav-menu a {
   display: block;
   position: relative;
-  color: #222222;
+  color: #fff;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #5cb874;
+  color: rgb(32, 66, 0);
 }
 
 .nav-menu .drop-down ul {
@@ -172,8 +173,8 @@
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: rgb(151, 183, 0, 0.95);
+  box-shadow: 0px 0px 30px rgba(127, 137, 161);
   transition: 0.3s;
 }
 
@@ -193,11 +194,11 @@
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #222222;
+  color: #000;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #5cb874;
+  color: rgb(255, 255, 255);
 }
 
 .nav-menu .drop-down > a:after {
@@ -243,19 +244,19 @@
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
-  color: #5cb874;
+  color: rgb(255, 255, 255);
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  border: 2px solid #5cb874;
+  border: 2px solid rgb(32, 66, 0);
   display: inline-block;
   font-weight: 600;
 }
 
 .get-started-btn:hover {
-  background: #5cb874;
+  background: rgb(32, 66, 0);
   color: #fff;
 }
 
@@ -318,7 +319,7 @@
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #5cb874;
+  color: rgb(32, 66, 0);
   text-decoration: none;
 }
 
