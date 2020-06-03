@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   background-color: #212529;
+  text-align: center;
 }
 
 h1,
@@ -727,11 +728,11 @@ ol {
 
 /* line 40, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
 .service_area .col-xl-4:nth-child(2) .single_service {
-  background: rgb(133, 164, 2);
+  background: rgb(32, 66, 0);
 }
 
 .service_area {
-  background: rgb(151, 183, 0);
+  background: rgb(133, 164, 2);
 }
 
 /*---------------------
@@ -4164,6 +4165,8 @@ ol {
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

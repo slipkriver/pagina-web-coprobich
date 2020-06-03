@@ -1,16 +1,5 @@
-/**
-* Template Name: Green - v2.0.0
-* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
 .back-to-top {
   position: fixed;
   display: none;
@@ -45,6 +34,8 @@
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
+  /* margin-left: -200px; */
+  font-family: Montserrat, Helvetica, Times, serif;
 }
 
 #topbar.topbar-scrolled {
@@ -55,6 +46,7 @@
   line-height: 1;
   color: #ffffff;
   transition: 0.3s;
+  margin-left: 10px;
 }
 
 #topbar .contact-info a:hover {
@@ -64,6 +56,7 @@
 #topbar .contact-info i {
   color: rgb(151, 183, 0);
   padding-right: 4px;
+  margin-left: -100px;
 }
 
 #topbar .contact-info i.icofont-phone {
@@ -90,7 +83,7 @@
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgb(246 , 187, 0);
+  background: rgb(247 , 176, 0);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -114,6 +107,8 @@
 
 #header .logo a {
   color: rgb(32, 66, 0);
+  margin-left: -100px;
+
 }
 
 #header .logo img {
@@ -155,8 +150,9 @@
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
+  /* font-family: Montserrat, Helvetica, Times, serif; */
   font-weight: bold;
 }
 
@@ -243,7 +239,7 @@
 
 /* Get Startet Button */
 .get-started-btn {
-  margin-left: 25px;
+  margin-left: 100px;
   color: rgb(255, 255, 255);
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
@@ -374,6 +370,16 @@
   color: #fff;
 }
 
+.stroke {
+  text-align:center;
+  color: #000;
+  /* background: #DA251D; */
+  font-family: Montserrat, Helvetica, Times, serif;
+  font-size: 36px;
+  line-height: 70%;
+  letter-spacing: 4px;
+  text-shadow: -1px -1px 0px rgb(32, 66, 0), 1px -1px 0px rgb(32, 66, 0), -1px 1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255);
+  }
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
