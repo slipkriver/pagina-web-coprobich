@@ -150,7 +150,8 @@
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
   font-family: "Open Sans", sans-serif;
   /* font-family: Montserrat, Helvetica, Times, serif; */
   font-weight: 600;
@@ -187,7 +188,7 @@
 
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: none;
   color: #000;
@@ -245,10 +246,11 @@
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 15px;
   border: 2px solid rgb(32, 66, 0);
   display: inline-block;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .get-started-btn:hover {
