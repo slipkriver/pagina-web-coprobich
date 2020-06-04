@@ -25,7 +25,7 @@ body {
   font-family: Montserrat, Helvetica, Times, serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background-color: #212529;
+  background-color: #201e1e;
   text-align: center;
 }
 
@@ -1147,6 +1147,7 @@ ol {
 .business_expert_area {
   padding-bottom: 0px;
   text-align: left;
+  background-color: #201e1e;
 }
 
 @media (max-width: 767px) {
@@ -1549,6 +1550,9 @@ ol {
 
 .instagram-photo {
   overflow: hidden;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   /* width: 100px; */
   /* height: 100px; */
   /* padding-bottom: 10px; */
@@ -1712,7 +1716,6 @@ ol {
 
 .partner-logo .texto{
   color: rgb(151, 183, 0);
-  font-size: 40px;
   font-weight: 750;
   text-align: center;
   font-family: Montserrat, Helvetica, Times, serif;
@@ -1740,7 +1743,7 @@ ol {
 -----------------------*/
 
 .footer-section {
-  background: #191919;
+  background: #201e1e;
   padding-top: 75px;
 }
 
@@ -1771,8 +1774,8 @@ ol {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background: #434445;
-  color: #ffffff;
+  background: #fff;
+  color: #fff;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -1791,7 +1794,7 @@ ol {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgb(133, 164, 2);
+  /* background: rgb(133, 164, 2); */
   content: "";
   border-radius: 50%;
   opacity: 0;
@@ -2363,12 +2366,16 @@ ol {
 
 # Team
 --------------------------------------------------------------*/
+.team{
+  background-color: #201e1e;
+  padding-top: 40px;
+}
 .team .member {
   text-align: center;
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
   padding: 30px 20px;
-  background: #fff;
+  background: rgba(133, 25, 102, 0.4);
 }
 
 .team .member img {

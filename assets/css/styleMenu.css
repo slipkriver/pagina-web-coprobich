@@ -30,7 +30,7 @@
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #212529;
+  background: #201e1e;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -72,7 +72,7 @@
 }
 
 #topbar .social-links a:hover {
-  color: rgb(151, 183, 0);
+  /* color: rgb(151, 183, 0); */
 }
 
 #topbar .social-links a:first-child {
