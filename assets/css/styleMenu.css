@@ -152,7 +152,7 @@
   transition: 0.3s;
   font-size: 15px;
   letter-spacing: 0.5px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   /* font-family: Montserrat, Helvetica, Times, serif; */
   font-weight: 600;
 }
