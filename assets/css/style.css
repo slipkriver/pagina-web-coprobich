@@ -139,7 +139,8 @@ ol {
   color: #252525;
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 38px;
+  /* margin-bottom: 100px; */
+  margin-top: 20px;
   position: relative;
 }
 
@@ -2323,7 +2324,7 @@ ol {
 
 # Team
 --------------------------------------------------------------*/
-.team{
+.team {
   background-color: #201e1e;
   padding-top: 40px;
 }
@@ -2358,6 +2359,11 @@ ol {
   font-size: 14px;
   font-style: italic;
   color: #aaaaaa;
+  text-align: center;
+}
+
+.team .member h2 {
+color: white;
 }
 
 .team .member .social {
@@ -2964,7 +2970,7 @@ ol {
   padding-top: 0px;
 }
 .accordion h2{
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .accordion a{
   text-align: left;
@@ -3055,7 +3061,7 @@ empresa-area
   padding-top: 0px;
 }
 .empresa-area h2{
-  padding-top: 150px;
+  padding-top: 200px;
   text-align: left;
 }
 .empresa-area a, p{
@@ -3583,7 +3589,7 @@ empresa-area
 -----------------------*/
 
 .map {
-  padding-top: 80px;
+  padding-top: 0px;
   padding-bottom: 0;
 }
 
@@ -3632,8 +3638,8 @@ empresa-area
 .contact-widget .cw-item {
   background: #ffffff;
   margin-bottom: 11px;
-  -webkit-box-shadow: 0px 3px 1px 3px rgb(133, 164, 2);
-  box-shadow: 0px 3px 1px 3px rgb(133, 164, 2);
+  -webkit-box-shadow: 1px 2px 10px 3px #851967;
+  box-shadow: 1px 2px 10px 3px #851967;
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;

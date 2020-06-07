@@ -159,6 +159,7 @@
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: rgb(32, 66, 0);
+  font-size: 18px;
 }
 
 .nav-menu .drop-down ul {
