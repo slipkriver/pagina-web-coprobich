@@ -3239,8 +3239,8 @@ empresa-area
 -----------------------*/
 
 .blog-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .blog-section .loading-more {
@@ -3379,6 +3379,8 @@ empresa-area
 
 .blog-item .bi-pic img {
   min-width: 100%;
+  height: 360px;
+  width: 288px;
 }
 
 .blog-item .bi-text {
