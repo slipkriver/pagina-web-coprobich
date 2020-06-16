@@ -3383,6 +3383,12 @@ empresa-area
   width: 288px;
 }
 
+.blog-item .bi-pic-invitacion img {
+  min-width: 100%;
+  height: 500px;
+  /* width: 88px; */
+}
+
 .blog-item .bi-text {
   padding-top: 24px;
 }
