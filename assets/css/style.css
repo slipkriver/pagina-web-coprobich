@@ -3410,6 +3410,16 @@ empresa-area
   line-height: 20px;
 }
 
+.bi-text p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f7b100;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
 .blog-item .bi-text p span {
   color: #b2b2b2;
   font-weight: 400;
@@ -3550,7 +3560,7 @@ empresa-area
 .blog-details-inner .tag-share {
   overflow: hidden;
   border-bottom: 1px solid #ebebeb;
-  padding-bottom: 54px;
+  /* padding-bottom: 5px; */
   margin-top: 46px;
 }
 
