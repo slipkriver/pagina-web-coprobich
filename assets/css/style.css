@@ -1831,8 +1831,35 @@ figure.effect-sarah:hover p {
 
 .logo-carousel .logo-item {
   display: table;
-  width:120px;
+  /* width:120px; */
   height:10px;
+}
+
+img.cooperante-trias {
+  height: 160px;
+  /* width: 2500px; */
+}
+
+img.cooperante-afd{
+  padding-top: 35px;
+  height: 120px;
+  width: 180px;
+}
+
+img.cooperante-sidi{
+  height: 160px;
+}
+
+img.cooperante-tacsa{
+  padding-top: 35px;
+  height: 120px;
+  width: 180px;
+}
+
+img.cooperante-terre{
+  padding-top: 35px;
+  height: 120px;
+  width: 180px;
 }
 
 .logo-carousel .logo-item .tablecell-inner {
@@ -1843,7 +1870,7 @@ figure.effect-sarah:hover p {
 
 .owl-carousel .owl-item img {
   display: block;
-  width: auto;
+  /* width: auto; */
 }
 
 /*---------------------
@@ -2476,7 +2503,7 @@ figure.effect-sarah:hover p {
 --------------------------------------------------------------*/
 .team {
   background-color: #201e1e;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 .team .member {
   text-align: center;
