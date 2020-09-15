@@ -140,7 +140,7 @@ ol {
   font-size: 36px;
   font-weight: 700;
   /* margin-bottom: 100px; */
-  margin-top: 20px;
+  margin-top: 3.5em;
   position: relative;
 }
 
@@ -1290,7 +1290,7 @@ figure.effect-sarah:hover p {
 .border_bottom {
   border-bottom: 0px solid;
   padding-bottom: 45px;
-  padding-top: 60px;
+  padding-top: 1.5em;
 }
 
 .business_expert_area {
@@ -1308,7 +1308,7 @@ figure.effect-sarah:hover p {
 
 /* line 118, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .business_expert_area .business_info .icon i {
-  background: #5DB2FF;
+  /* background: #5DB2FF; */
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -1321,10 +1321,10 @@ figure.effect-sarah:hover p {
 
 /* line 130, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .business_expert_area .business_info h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
   color: #ffffff;
-  margin-top: 16px;
+  margin-top: 2.5em;
   margin-bottom: 14px;
 }
 
@@ -1333,6 +1333,7 @@ figure.effect-sarah:hover p {
   color: #727272;
   line-height: 28px;
   margin-bottom: 0;
+  margin-top: 8.5em;
 }
 
 @media (max-width: 767px) {
@@ -1346,7 +1347,7 @@ figure.effect-sarah:hover p {
 .business_expert_area .business_thumb img {
   width: 100%;
   position: absolute;
-  top: -200px;
+  margin-top: -7.5em;
   right: -95px;
 }
 
@@ -1876,31 +1877,57 @@ figure.effect-sarah:hover p {
   height:10px;
 }
 
+img.certificaciones-usda{
+  height: 130px;
+  width: auto;
+}
+
+img.certificaciones-ab{
+  height: 130px;
+  width: auto;
+}
+
+img.certificaciones-ecbio141{
+  height: 130px;
+  width: auto;
+}
+
+img.certificaciones-bcs{
+  height: 130px;
+  width: auto;
+}
+
+img.certificaciones-spp{
+  height: 130px;
+  width: auto;
+}
+
 img.cooperante-trias {
-  height: 160px;
+  height: 130px;
+  width: auto;
   /* width: 2500px; */
 }
 
 img.cooperante-afd{
-  padding-top: 35px;
-  height: 120px;
+  margin-top: 10px;
+  height: 90px;
   width: 180px;
 }
 
 img.cooperante-sidi{
-  height: 160px;
+  height: 130px;
+  width: 130px;
 }
 
 img.cooperante-tacsa{
-  padding-top: 35px;
-  height: 120px;
+  margin-top: 5px;
+  height: 100px;
   width: 180px;
 }
 
 img.cooperante-terre{
-  padding-top: 35px;
-  height: 120px;
-  width: 180px;
+  height: 100px;
+  width: 160px;
 }
 
 .logo-carousel .logo-item .tablecell-inner {
