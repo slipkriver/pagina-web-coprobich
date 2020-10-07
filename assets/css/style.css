@@ -1,22 +1,4 @@
 
-/*------------------------------------------------------------------
-[Table of contents]
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Banner Section
-6.  Deal Of The Week
-7.  Latest Blog
-8.  Logo Carousel
-9.  Contact
-10.  Footer
--------------------------------------------------------------------*/
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
 
 html,
@@ -2578,7 +2560,7 @@ img.cooperante-terre{
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
   padding: 30px 20px;
-  background: rgba(133, 25, 102, 0.4);
+  background: #252525;
 }
 
 .team .member img {
@@ -3521,6 +3503,8 @@ empresa-area
   text-transform: capitalize;
   letter-spacing: 0;
 }
+
+
 
 /*---------------------
   Blog Details
