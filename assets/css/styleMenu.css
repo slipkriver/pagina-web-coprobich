@@ -294,7 +294,7 @@
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: rgb(151, 183, 0, 0.95);
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -311,14 +311,15 @@
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #222222;
+  color: #ffffff;
   padding: 10px 20px;
-  font-weight: 500;
+  font: 700;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: rgb(32, 66, 0);
+  font-weight: 800;
   text-decoration: none;
 }
 
