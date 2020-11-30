@@ -347,6 +347,9 @@ figure.effect-sarah:hover p {
   cursor: pointer;
 }
 
+.carrousel{
+  padding: 1.7em;
+}
 /* SLider */
 .slider{
   max-width: 100%;
@@ -907,6 +910,7 @@ figure.effect-sarah:hover p {
   color: #fff;
   margin-top: 10px;
   margin-bottom: 26px;
+  text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -918,12 +922,12 @@ figure.effect-sarah:hover p {
 
 /* line 40, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
 .service_area .col-xl-4:nth-child(2) .single_service {
-  background: rgb(32, 66, 0);
+  background: #204200;
   height: 400px;
 }
 
 .service_area {
-  background: rgb(133, 164, 2);
+  background:#204200;
 }
 
 /*---------------------
@@ -2612,19 +2616,25 @@ img.cooperante-terre{
 .team {
   background-color: #201e1e;
   /* padding-top: 40px; */
-  margin-left: 1.5em;
+  /* margin-left: 1.5em; */
 }
+ 
+.card{
+  border: 0em;
+}
+
 .team .member {
   text-align: center;
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
-  padding: 30px 20px;
-  background: rgba(34, 34, 34, 0.8);
+  padding: 1.0em;
+  background: rgb(34, 34, 34);
+  /* border: 1px solid rgb(246, 187, 0); */
 }
 
 .team .member img {
   max-width: 60%;
   border-radius: 50%;
-  margin: 0 0 10% 20%;
+  margin: 0 0 10% 0;
 }
 
 .team .member h4 {
@@ -2652,7 +2662,7 @@ color: white;
 }
 
 .team .member .social {
-  margin-top: 15px;
+  margin-top: 2em;
 }
 
 .team .member .social a {
